@@ -12,7 +12,8 @@ public class WeatherData : ISubject
     }
     public void registerObserver(IObserver o)
     {
-        observers.Add(o);
+        if (!observers.Contains(o))
+            observers.Add(o);
     }
     public void removeObserver(IObserver o)
     {

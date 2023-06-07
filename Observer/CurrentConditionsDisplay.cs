@@ -13,7 +13,7 @@ public class CurrentConditionsDisplay : IObserver, IDisplayElement
 
     public void display()
     {
-        Console.WriteLine($"Current conditions: {this.temperature}C degrees and {this.humidity} humidity.");
+        Console.WriteLine($"Current conditions: {this.temperature}C degrees {this.humidity} humidity and {this.pressure} pressure");
     }
 
     public void update(float temp, float humidity, float pressure)

@@ -2,7 +2,7 @@ public class StatisticsDisplay : IObserver, IDisplayElement
 {
     private float avg;
     private float max;
-    private float min;
+    private float min = float.MaxValue;
 
     private readonly ISubject weatherData;
 
@@ -23,6 +23,9 @@ public class StatisticsDisplay : IObserver, IDisplayElement
             this.avg = temp; 
         else 
             this.avg = (this.avg + temp)/2; 
+
+        this.max = Math.Max(this.max, temp); 
+        this.min = Math.Min(this.min, temp);
 
         display();
     }
