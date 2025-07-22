@@ -17,10 +17,6 @@ TestDuck(mallardDuck);
 System.Console.WriteLine("\nThe TurkeyAdapter says...");
 TestDuck(turkeyAdapter);
 
-
-// Class implementation 
-
-
 static void TestDuck(IDuck duck)
 {
     duck.Quack();
