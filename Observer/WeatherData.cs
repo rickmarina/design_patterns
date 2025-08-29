@@ -15,6 +15,13 @@ public class WeatherData : ISubject
         if (!observers.Contains(o))
             observers.Add(o);
     }
+
+    public void registerObservers(IEnumerable<IObserver> observers)
+    {
+        foreach (var obs in observers)
+            registerObserver(obs);
+    }
+
     public void removeObserver(IObserver o)
     {
         observers.Remove(o);
