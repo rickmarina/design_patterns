@@ -35,9 +35,9 @@ public class EventBroker : ISubject
     public void Notify(EventType eventName, object data)
     {
         // Validar que el dato corresponde al tipo esperado para este evento
-        if (!EventTypeMetadata.ValidateData(eventName, data))
+        if (!EventTypeMapping.ValidateData(eventName, data))
         {
-            var expectedType = EventTypeMetadata.GetDataType(eventName);
+            var expectedType = EventTypeMapping.GetDataType(eventName);
             var actualType = data?.GetType().Name ?? "null";
             _logger.LogError("Event '{EventName}' expects data of type '{ExpectedType}' but received '{ActualType}'", 
                 eventName, expectedType.Name, actualType);

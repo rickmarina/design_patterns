@@ -1,6 +1,6 @@
 using static EventBroker;
 
-public class EventTypeMetadata
+public class EventTypeMapping
 {
     private static readonly Dictionary<EventType, Type> _eventDataTypes = new()
     {
