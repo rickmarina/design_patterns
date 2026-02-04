@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Result", "Result\Result.csproj", "{ACE98010-30AA-4F5D-94C2-EDE584509F18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverApi", "ObserverApi\ObserverApi.csproj", "{D885071B-5A67-4F7A-9605-BFDBFCE203A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,18 @@ Global
 		{ACE98010-30AA-4F5D-94C2-EDE584509F18}.Release|x64.Build.0 = Release|Any CPU
 		{ACE98010-30AA-4F5D-94C2-EDE584509F18}.Release|x86.ActiveCfg = Release|Any CPU
 		{ACE98010-30AA-4F5D-94C2-EDE584509F18}.Release|x86.Build.0 = Release|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Debug|x64.Build.0 = Debug|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Debug|x86.Build.0 = Debug|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Release|x64.ActiveCfg = Release|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Release|x64.Build.0 = Release|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Release|x86.ActiveCfg = Release|Any CPU
+		{D885071B-5A67-4F7A-9605-BFDBFCE203A6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
