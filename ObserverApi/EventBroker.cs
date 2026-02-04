@@ -27,8 +27,8 @@ public class EventBroker : ISubject
     {
         if (_observers.TryGetValue(eventName, out var observers))
         {
-            // ConcurrentBag no soporta Remove, necesitarías recrear el bag sin el observer
-            _logger.LogWarning("Unsuscribe not fully supported with ConcurrentBag");
+            observers.Remove(observer);
+            _logger.LogInformation("Unsuscribed observer {ObserverName} from event '{EventName}'", observer.GetType().Name, eventName);
         }
     }
 
